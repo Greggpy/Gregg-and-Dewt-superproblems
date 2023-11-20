@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+0. [Red, Green, Refactor](#0-red-green-refactor)
 1. [Basic Value Assertions](#1-basic-value-assertions)
 2. [Testing for Exceptions](#2-testing-for-exceptions)
 3. [Collection Assertions](#3-collection-assertions)
@@ -9,6 +10,24 @@
 5. [Object State and Behavior Testing](#5-object-state-and-behavior-testing)
 6. [Class Instance Testing](#6-class-instance-testing)
 7. [Testing Object Methods and Side Effects](#7-testing-object-methods-and-side-effects)
+
+## 0. Red, Green, Refactor
+
+Write the Smallest Possible Test Case: Start by writing a very small and specific test for a tiny piece of functionality. This test should initially fail because the functionality has not been implemented yet.
+
+Write Just Enough Code to Pass the Test: Write only the amount of code necessary to make the test pass. The focus here is on simplicity and meeting the test requirements, not on writing comprehensive or final implementations.
+
+Refactor the Code: Once the test passes, refactor the code. This includes cleaning up, removing duplication, and ensuring that the code adheres to good design principles. The key here is to make the code as clean and efficient as possible without altering its functionality.
+
+Repeat the Process: After refactoring, write the next test, and continue the cycle of test, code, and refactor. This iterative process encourages building the software in small, manageable increments.
+
+Focus on One Test at a Time: Work on one test and corresponding functionality at a time. Avoid the temptation to write multiple tests for different functionalities before making them pass.
+
+Green-Red-Green Cycle: Remember the TDD mantra - "Red, Green, Refactor":
+
+    Red: Write a test that fails (since the feature isn’t implemented yet).
+    Green: Write just enough code to make the test pass.
+    Refactor: Clean up the code while keeping the test green (passing).
 
 ## 1. Basic Value Assertions
 
